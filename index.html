@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="demo">
+<head>
+    <title>Controller Messaging Demo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+    <script src="js/demoService.js"></script>
+    <script src="js/demoControllers.js"></script>
+    <link href="css/demo.css" type="text/css" rel="stylesheet" media="screen, projection" />
+</head>
+<body>
+  <div data-ng-controller="TopController">
+      Top Value: <input data-ng-model="topValue" /><br/>
+      Middle Value: {{middleValue}}<br/>
+      Bottom Value: {{bottomValue}}
+  </div>
+  <div data-ng-controller="MiddleController">
+      Top Value: {{topValue}}<br/>
+      Middle Value: <input data-ng-model="middleValue" /><br/>
+      Bottom Value: {{bottomValue}}
+  </div>
+  <div data-ng-controller="BottomController">
+      Top Value: {{topValue}}<br/>
+      Middle Value: {{middleValue}}<br/>
+      Bottom Value:  <input data-ng-model="bottomValue" /><br/>
+  </div>
+</body>
+</html>
