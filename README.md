@@ -1,4 +1,4 @@
-angular-contoller-messaging
+Angular Controller Messaging
 ===========================
 
 Demo using services and broadcast messaging to share data between controllers in AngualrJS
